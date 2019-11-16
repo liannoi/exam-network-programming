@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Exam.Shared.BL.BusinessObjects;
+using System;
 using System.Windows.Forms;
 
 namespace Exam.Shared.Helpers
@@ -21,6 +22,11 @@ namespace Exam.Shared.Helpers
     {
         public static void Update(this ButtonBusinessObject buttonBusinessObject, Button button)
         {
+            if (button == null)
+            {
+                throw new ArgumentNullException(nameof(button));
+            }
+
             buttonBusinessObject.Height = button.Height;
             buttonBusinessObject.Width = button.Width;
             buttonBusinessObject.X = button.Location.X;

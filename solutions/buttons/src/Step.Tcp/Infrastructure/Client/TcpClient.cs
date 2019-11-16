@@ -60,7 +60,7 @@ namespace Step.Tcp.Infrastructure.Client
             await Task.Factory.StartNew(() =>
             {
                 Say(say);
-            });
+            }).ConfigureAwait(false);
         }
 
         public TListen SayAndListen<TListen, TSay>(TSay say) where TListen : class

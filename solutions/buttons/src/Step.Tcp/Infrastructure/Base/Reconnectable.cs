@@ -21,6 +21,11 @@ namespace Step.Tcp.Infrastructure.Base
     {
         public static ITcpClient Reconnect(this ITcpClient client)
         {
+            if (client == null)
+            {
+                throw new ArgumentNullException(nameof(client));
+            }
+
             GC.SuppressFinalize(client);
             return new TcpClient(client.Properties);
         }

@@ -30,6 +30,11 @@ namespace Step.Tcp.Infrastructure.Server
 
         public TcpServer(IServerProperties properties)
         {
+            if (properties == null)
+            {
+                throw new ArgumentNullException(nameof(properties));
+            }
+
             server = new TcpListener(
                 IPAddress.Parse(properties.ServerIP),
                 properties.ServerPort);

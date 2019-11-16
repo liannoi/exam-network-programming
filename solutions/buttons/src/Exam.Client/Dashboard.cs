@@ -88,6 +88,10 @@ namespace Exam.Client
             {
                 buttonBusinessService.ToButton();
             }
+            else
+            {
+                // Empty.
+            }
 
             NotifyServer();
         }

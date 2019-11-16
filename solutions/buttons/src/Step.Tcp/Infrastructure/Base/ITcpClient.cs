@@ -20,8 +20,8 @@ namespace Step.Tcp.Infrastructure.Base
     {
         IServerProperties Properties { get; set; }
 
-        void Say<TSay>(TSay say);
-        Task SayAsync<TSay>(TSay say);
-        TListen SayAndListen<TListen, TSay>(TSay say) where TListen : class;
+        void Say<TSay>(TSay @object);
+        Task SayAsync<TSay>(TSay @object);
+        TListen SayAndListen<TListen, TSay>(TSay @object) where TListen : class;
     }
 }

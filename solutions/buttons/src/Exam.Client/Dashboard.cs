@@ -22,6 +22,7 @@ namespace Exam.Client
 {
     public partial class Dashboard : Form
     {
+
 #if Debug_Borders
 
         private readonly FormBorderBusinessService formBorderBusinessService;
@@ -64,7 +65,7 @@ namespace Exam.Client
             startButton.Enabled = false;
         }
 
-        private async void CarButton_KeyUp(object sender, KeyEventArgs e)
+        private void CarButton_KeyUp(object sender, KeyEventArgs e)
         {
             if (!IsStartPress)
             {

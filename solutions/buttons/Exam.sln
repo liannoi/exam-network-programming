@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2019
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.Client", "Exam.Client\Exam.Client.csproj", "{365F7E9A-AFB9-4A00-A53E-3672ABDA1704}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.Client", "src\Exam.Client\Exam.Client.csproj", "{365F7E9A-AFB9-4A00-A53E-3672ABDA1704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.Server", "Exam.Server\Exam.Server.csproj", "{F9356449-67CC-4D7E-A055-165A31CDED58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.Server", "src\Exam.Server\Exam.Server.csproj", "{F9356449-67CC-4D7E-A055-165A31CDED58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step.Tcp", "Step.Tcp\Step.Tcp.csproj", "{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.Shared", "src\Exam.Shared\Exam.Shared.csproj", "{C8E07B00-FD37-40ED-9F54-A2494A921FD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam.Shared", "Exam.Shared\Exam.Shared.csproj", "{C8E07B00-FD37-40ED-9F54-A2494A921FD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step.Tcp", "src\Step.Tcp\Step.Tcp.csproj", "{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{F9356449-67CC-4D7E-A055-165A31CDED58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9356449-67CC-4D7E-A055-165A31CDED58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9356449-67CC-4D7E-A055-165A31CDED58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C8E07B00-FD37-40ED-9F54-A2494A921FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8E07B00-FD37-40ED-9F54-A2494A921FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8E07B00-FD37-40ED-9F54-A2494A921FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E07B00-FD37-40ED-9F54-A2494A921FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6AD9F9C-6A21-4974-B69D-925EBA087C0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

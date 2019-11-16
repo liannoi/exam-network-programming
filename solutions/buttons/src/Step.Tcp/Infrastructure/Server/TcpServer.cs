@@ -26,10 +26,15 @@ namespace Step.Tcp.Infrastructure.Server
     {
         protected readonly TcpListener server;
 
-        public event ClientConnectedEventHandler ClientConnected;
+        public event EventHandler<ClientConnectedEventArgs> ClientConnected;
 
         public TcpServer(IServerProperties properties)
         {
+            if (properties == null)
+            {
+                throw new ArgumentNullException(nameof(properties));
+            }
+
             server = new TcpListener(
                 IPAddress.Parse(properties.ServerIP),
                 properties.ServerPort);

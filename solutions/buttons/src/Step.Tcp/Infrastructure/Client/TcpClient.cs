@@ -41,13 +41,13 @@ namespace Step.Tcp.Infrastructure.Client
             }
         }
 
-        public void Say<TSay>(TSay say)
+        public void Say<TSay>(TSay @object)
         {
             try
             {
                 NetworkStream stream = client.GetStream();
                 BinaryFormatter formatter = new BinaryFormatter();
-                formatter.Serialize(stream, say);
+                formatter.Serialize(stream, @object);
             }
             catch (IOException)
             {
@@ -60,7 +60,7 @@ namespace Step.Tcp.Infrastructure.Client
             await Task.Factory.StartNew(() =>
             {
                 Say(say);
-            });
+            }).ConfigureAwait(false);
         }
 
         public TListen SayAndListen<TListen, TSay>(TSay say) where TListen : class

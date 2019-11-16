@@ -2,6 +2,8 @@
 
 [//]: # (Badges)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b26cf8ba11e0411b9b5d5165df335938)](https://www.codacy.com/manual/liannoi/exam-network-programming?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=liannoi/exam-network-programming&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/liannoi/exam-network-programming/badge)](https://www.codefactor.io/repository/github/liannoi/exam-network-programming)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/liannoi/exam-network-programming/blob/master/LICENSE)
 
 [//]: # (Screenshot of the program)

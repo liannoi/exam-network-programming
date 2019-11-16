@@ -47,17 +47,14 @@ namespace Exam.Client.BL.BusinessServices
             {
                 return ControlDirection.Top;
             }
-
             if ((buttonBusinessObject.Y + buttonBusinessObject.Height + FormBorderLimit * 3) >= formBusinessObject.Height)
             {
                 return ControlDirection.Left;
             }
-
             else if ((buttonBusinessObject.X + buttonBusinessObject.Width + FormBorderLimit) >= formBusinessObject.Width)
             {
                 return ControlDirection.Button;
             }
-
             else
             {
                 return ControlDirection.Right;

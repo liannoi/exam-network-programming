@@ -48,8 +48,10 @@
     <Compile Include="Infrastructure\Client\TcpClient.cs" />
     <Compile Include="Infrastructure\DataObjects\ServerProperties.cs" />
     <Compile Include="Infrastructure\Base\ITcpServer.cs" />
-    <Compile Include="Infrastructure\Events\ClientConnectedEvent.cs" />
-    <Compile Include="Infrastructure\Events\DataReceivedEvent.cs" />
+    <Compile Include="Infrastructure\Events\ClientConnectedEventArgs.cs" />
+    <Compile Include="Infrastructure\Events\DataReceivedEventArgs.cs" />
+    <Compile Include="Infrastructure\Events\INotifyClientConnected.cs" />
+    <Compile Include="Infrastructure\Events\INotifyDataReceived.cs" />
     <Compile Include="Infrastructure\Helpers\IPDefiner.cs" />
     <Compile Include="Infrastructure\Server\TcpServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

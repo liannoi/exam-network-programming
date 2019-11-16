@@ -69,7 +69,7 @@ namespace Exam.BL.ViewModels
             get => Get(messages);
             set => Set(value);
         }
-        public ICommand SendMessageCommand => MakeCommand(async a => await SendMessageAsync(), c => ChatMessageBuffer.IsCorrect());
+        public ICommand SendMessageCommand => MakeCommand(async a => await SendMessageAsync().ConfigureAwait(false), c => ChatMessageBuffer.IsCorrect());
         public ICommand JoinChatCommnad => MakeCommand(a => AddMember(), c => JoinChatBuffer.IsCorrect());
         public ICommand SelectAllMembersCommand => MakeCommand(a => SelectAll());
 

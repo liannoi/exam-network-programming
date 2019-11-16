@@ -18,10 +18,8 @@ using System.Threading.Tasks;
 
 namespace Step.Tcp.Infrastructure.Base
 {
-    public interface ITcpServer
+    public interface ITcpServer : INotifyClientConnected
     {
-        event ClientConnectedEventHandler ClientConnected;
-
         Task<TListen> ListenAsync<TListen>() where TListen : class;
         TListen Listen<TListen>() where TListen : class;
         TListen ListenAndSay<TListen, TResult>(Func<TListen, TResult> say);

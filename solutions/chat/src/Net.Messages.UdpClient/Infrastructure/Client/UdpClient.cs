@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Net.Messages.UdpClient.Infrastructure.Base;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -23,7 +24,6 @@ namespace Net.Messages.UdpClient.Infrastructure.Client
     public class UdpClient : IUdpClient
     {
         private readonly System.Net.Sockets.UdpClient udpclient;
-        private readonly IPAddress multicastaddress;
         private readonly IPEndPoint remoteep;
         private readonly IClientProperties properties;
 
@@ -34,23 +34,27 @@ namespace Net.Messages.UdpClient.Infrastructure.Client
             this.properties = properties;
             LastMessage = lastMessage;
             properties.ToLocalhost();
-            multicastaddress = properties.Address;
             udpclient = new System.Net.Sockets.UdpClient();
-            remoteep = new IPEndPoint(multicastaddress, properties.Port);
+            remoteep = new IPEndPoint(properties.Address, properties.Port);
         }
 
         public void ToLocalhost()
         {
-            properties.ToLocalhost();
+            properties?.ToLocalhost();
         }
 
         public void ToBroadcast()
         {
-            properties.ToBroadcast();
+            properties?.ToBroadcast();
         }
 
         public async Task SendAsync(IUdpMessage message)
         {
+            if (message == null)
+            {
+                throw new ArgumentNullException(nameof(message));
+            }
+
             LastMessage.Sender = message.Sender;
             byte[] buffer = Encoding.UTF8.GetBytes(message.Message);
             await udpclient.SendAsync(buffer, buffer.Length, remoteep);

@@ -48,13 +48,18 @@ namespace Net.Messages.UdpClient.Infrastructure.Client
             properties?.ToBroadcast();
         }
 
-        public async Task SendAsync(IUdpMessage message)
+        public Task SendAsync(IUdpMessage message)
         {
             if (message == null)
             {
                 throw new ArgumentNullException(nameof(message));
             }
 
+            return SendInternalAsync(message);
+        }
+
+        private async Task SendInternalAsync(IUdpMessage message)
+        {
             LastMessage.Sender = message.Sender;
             byte[] buffer = Encoding.UTF8.GetBytes(message.Message);
             await udpclient.SendAsync(buffer, buffer.Length, remoteep);

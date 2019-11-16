@@ -1,0 +1,108 @@
+﻿<Window x:Class="Exam.WindowUI.Windows.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:model="clr-namespace:Exam.BL.ViewModels;assembly=Exam.BL"
+        mc:Ignorable="d"
+        Title="Dashboard"
+        Height="720"
+        MinHeight="585"
+        Width="1280"
+        MinWidth="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResizeWithGrip">
+    <Window.DataContext>
+        <model:DashboardViewModel />
+    </Window.DataContext>
+    <Grid FocusManager.FocusedElement="{Binding ElementName=Name}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Your name"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Width="175" />
+        <TextBox x:Name="Name"
+                 Grid.Row="1"
+                 Height="30"
+                 Width="180"
+                 VerticalAlignment="Top"
+                 Margin="0,7,0,0"
+                 Text="{Binding JoinChatBuffer, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+            <TextBox.InputBindings>
+                <KeyBinding Command="{Binding JoinChatCommnad}"
+                            Key="Enter" />
+            </TextBox.InputBindings>
+        </TextBox>
+        <TextBlock Grid.Row="2"
+                   Text="Members"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Width="175" />
+        <TextBlock Grid.Column="1"
+                   Text="{Binding CurrentMember.Name}"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Left"
+                   Margin="4,0,0,0" />
+        <ListBox Grid.Row="3"
+                 Width="180"
+                 Margin="0,7,0,0"
+                 ItemsSource="{Binding Members}"
+                 SelectedValue="{Binding CurrentMember}"
+                 IsSynchronizedWithCurrentItem="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Content="Select all"
+                Grid.Row="4"
+                Margin="0,7,0,0"
+                Width="120"
+                Height="25"
+                Command="{Binding SelectAllMembersCommand}" />
+        <Button Content="Send"
+                Grid.Row="4"
+                Grid.Column="3"
+                Grid.RowSpan="2"
+                Margin="0,7,0,0"
+                Width="120"
+                Height="25"
+                HorizontalAlignment="Right"
+                Command="{Binding SendMessageCommand}" />
+        <ListBox Grid.Row="1"
+                 Grid.RowSpan="3"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="3"
+                 Margin="0,7,0,0"
+                 ItemsSource="{Binding Messages}"/>
+        <TextBox Grid.Column="1"
+                 Grid.Row="4"
+                 Grid.RowSpan="2"
+                 Grid.ColumnSpan="2"
+                 Margin="0,7,0,0"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"
+                 Text="{Binding ChatMessageBuffer, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+            <TextBox.InputBindings>
+                <KeyBinding Command="{Binding SendMessageCommand}"
+                            Key="Enter" />
+            </TextBox.InputBindings>
+        </TextBox>
+    </Grid>
+</Window>

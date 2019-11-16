@@ -30,7 +30,7 @@ namespace Exam.Client.BL.BusinessServices
         private readonly Button button;
         private readonly TcpClientBusinessService tcpClientBusinessService;
 
-        private int ButtonMoveStep => 20;
+        private static int ButtonMoveStep => 20;
         public ButtonBusinessObject ButtonBusinessObject { get; private set; }
 
         public ButtonBusinessService(ITcpClient client, Button button) : base(client)
@@ -39,7 +39,7 @@ namespace Exam.Client.BL.BusinessServices
             ButtonBusinessObject = new ButtonBusinessObject
             {
                 ClientId = Guid.NewGuid().ToString(),
-                ClientIP = IPDefiner.GetLocalIPAddress()
+                ClientIP = IPDefiner.LocalIP
             };
             tcpClientBusinessService = this;
         }

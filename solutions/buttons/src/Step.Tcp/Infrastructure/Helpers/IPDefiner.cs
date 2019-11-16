@@ -19,17 +19,20 @@ namespace Step.Tcp.Infrastructure.Helpers
 {
     public static class IPDefiner
     {
-        public static string GetLocalIPAddress()
+        public static string LocalIP
         {
-            IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
-            foreach (IPAddress ip in host.AddressList)
+            get
             {
-                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
+                foreach (IPAddress ip in host.AddressList)
                 {
-                    return ip.ToString();
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        return ip.ToString();
+                    }
                 }
+                return string.Empty;
             }
-            return string.Empty;
         }
     }
 }

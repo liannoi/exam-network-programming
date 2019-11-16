@@ -72,22 +72,18 @@ namespace Exam.Client
                 MessageBox.Show("Click Start");
                 return;
             }
-
             if (e.KeyCode == Keys.Left)
             {
                 buttonBusinessService.ToLeft();
             }
-
             else if (e.KeyCode == Keys.Up)
             {
                 buttonBusinessService.ToUp();
             }
-
             else if (e.KeyCode == Keys.Right)
             {
                 buttonBusinessService.ToRight();
             }
-
             else if (e.KeyCode == Keys.Down)
             {
                 buttonBusinessService.ToButton();

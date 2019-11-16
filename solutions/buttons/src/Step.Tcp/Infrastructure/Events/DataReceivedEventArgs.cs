@@ -16,10 +16,8 @@ using System;
 
 namespace Step.Tcp.Infrastructure.Events
 {
-    public class ClientConnectedEventArgs : EventArgs
+    public class DataReceivedEventArgs<TObject> : EventArgs where TObject : class
     {
-        public string ClientIP { get; set; }
+        public TObject Data { get; set; }
     }
-
-    public delegate void ClientConnectedEventHandler(object sender, ClientConnectedEventArgs e);
 }

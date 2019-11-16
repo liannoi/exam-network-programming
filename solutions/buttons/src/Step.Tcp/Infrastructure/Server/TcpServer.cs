@@ -26,7 +26,7 @@ namespace Step.Tcp.Infrastructure.Server
     {
         protected readonly TcpListener server;
 
-        public event ClientConnectedEventHandler ClientConnected;
+        public event EventHandler<ClientConnectedEventArgs> ClientConnected;
 
         public TcpServer(IServerProperties properties)
         {

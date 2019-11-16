@@ -15,14 +15,15 @@
 using Exam.Shared.BL.BusinessObjects;
 using Step.Tcp.Infrastructure.Base;
 using Step.Tcp.Infrastructure.Events;
+using System;
 using System.Threading.Tasks;
 
 namespace Exam.Server.BL.BusinessServices
 {
-    public sealed class ButtonListener : TcpServerBusinessService
+    public sealed class ButtonListener : TcpServerBusinessService, INotifyDataReceived<ButtonBusinessObject>
     {
-        public event DataReceivedEventHandler<ButtonBusinessObject> DataReceived;
-
+        public event EventHandler<DataReceivedEventArgs<ButtonBusinessObject>> DataReceived;
+        
         public ButtonListener(ITcpServer server) : base(server)
         {
         }

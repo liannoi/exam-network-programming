@@ -6,7 +6,7 @@
 
 [//]: # (Screenshot of the program)
 
-![](https://github.com/liannoi/exam-network-programming/tree/master/res/screenshot.png)
+![](https://github.com/liannoi/exam-network-programming/blob/master/res/screenshot.png)
 
 [//]: # (Short description)
 

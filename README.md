@@ -26,6 +26,8 @@ That is, the client starts and you need to click the "Start" button to appear
 on the server side. Then, by moving it to the "arrows" of the keyboard, it
 moves on the server side.
 
+I got 11/12 for work. Teacher: Vasilenko Igor Grigorevich
+
 ## License
 
 The repository is licensed by [Apache-2.0](https://github.com/liannoi/exam-network-programming/blob/master/LICENSE).

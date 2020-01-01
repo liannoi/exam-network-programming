@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="382359b9-1102-44e0-aa6b-61938b3f03f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../buttons/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessObjects/FormBusinessObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessObjects/FormBusinessObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessServices/ButtonBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessServices/ButtonBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessServices/FormBorderBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessServices/FormBorderBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessServices/TcpClientBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/BusinessServices/TcpClientBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/Infrastructure/IButtonBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/Infrastructure/IButtonBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/Infrastructure/IFormBorderBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/Infrastructure/IFormBorderBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/Infrastructure/ITcpClientBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/BL/Infrastructure/ITcpClientBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/Dashboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/Dashboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/Helpers/ControlDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/Helpers/ControlDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Server/BL/BusinessServices/ButtonListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Server/BL/BusinessServices/ButtonListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Server/BL/BusinessServices/TcpServerBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Server/BL/BusinessServices/TcpServerBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Server/BL/Infrastructure/ITcpServerBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Server/BL/Infrastructure/ITcpServerBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Server/Dashboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Server/Dashboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Server/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Shared/BL/BusinessObjects/BaseServerProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Shared/BL/BusinessObjects/BaseServerProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Shared/BL/BusinessObjects/ButtonBusinessObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Shared/BL/BusinessObjects/ButtonBusinessObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Exam.Shared/Helpers/Updateable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Exam.Shared/Helpers/Updateable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/IServerProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/IServerProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/ITcpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/ITcpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/ITcpServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/ITcpServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/Reconnectable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Base/Reconnectable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Client/TcpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Client/TcpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/DataObjects/ServerProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/DataObjects/ServerProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Events/ClientConnectedEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Events/ClientConnectedEventArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Events/DataReceivedEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Events/DataReceivedEventArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Helpers/IPDefiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Helpers/IPDefiner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Server/TcpServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../buttons/src/Step.Tcp/Infrastructure/Server/TcpServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exam.BL/BusinessObjects/ChatMemberBusinessObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exam.BL/BusinessObjects/ChatMemberBusinessObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exam.BL/Helpers/Bindable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exam.BL/Helpers/Bindable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exam.BL/Helpers/StringOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exam.BL/Helpers/StringOperation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exam.BL/ViewModels/BaseViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exam.BL/ViewModels/BaseViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exam.BL/ViewModels/DashboardViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exam.BL/ViewModels/DashboardViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exam.BL/ViewModels/RelayCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exam.BL/ViewModels/RelayCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exam.WindowUI/Windows/Dashboard.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exam.WindowUI/Windows/Dashboard.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Base/IClientProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Base/IClientProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Base/IUdpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Base/IUdpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Base/IUdpMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Base/IUdpMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Client/ClientProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Client/ClientProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Client/UdpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Client/UdpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Client/UdpMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Net.Messages.UdpClient/Infrastructure/Client/UdpMessage.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Exam.BL/Helpers/Bindable.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1VnU7Or88dTLfPhD5b1l5k36D3Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../exam-system-programming/Exam.sln" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="382359b9-1102-44e0-aa6b-61938b3f03f3" name="Default Changelist" comment="" />
+      <created>1577888184178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577888184178</updated>
+      <workItem from="1577888185610" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

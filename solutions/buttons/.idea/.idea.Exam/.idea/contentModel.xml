@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Exam.1780576843.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Exam.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src/Exam.Client" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BL" t="Include">
+          <e p="BusinessObjects" t="Include">
+            <e p="FormBusinessObject.cs" t="Include" />
+          </e>
+          <e p="BusinessServices" t="Include">
+            <e p="ButtonBusinessService.cs" t="Include" />
+            <e p="FormBorderBusinessService.cs" t="Include" />
+            <e p="TcpClientBusinessService.cs" t="Include" />
+          </e>
+          <e p="Infrastructure" t="Include">
+            <e p="IButtonBusinessService.cs" t="Include" />
+            <e p="IFormBorderBusinessService.cs" t="Include" />
+            <e p="ITcpClientBusinessService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Dashboard.cs" t="Include" />
+        <e p="Dashboard.Designer.cs" t="Include" />
+        <e p="Dashboard.resx" t="Include" />
+        <e p="Exam.Client.csproj" t="IncludeRecursive" />
+        <e p="Helpers" t="Include">
+          <e p="ControlDirection.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+      </e>
+      <e p="src/Exam.Server" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BL" t="Include">
+          <e p="BusinessServices" t="Include">
+            <e p="ButtonListener.cs" t="Include" />
+            <e p="TcpServerBusinessService.cs" t="Include" />
+          </e>
+          <e p="Infrastructure" t="Include">
+            <e p="ITcpServerBusinessService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Dashboard.cs" t="Include" />
+        <e p="Dashboard.Designer.cs" t="Include" />
+        <e p="Dashboard.resx" t="Include" />
+        <e p="Exam.Server.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+      </e>
+      <e p="src/Exam.Shared" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BL" t="Include">
+          <e p="BusinessObjects" t="Include">
+            <e p="BaseServerProperties.cs" t="Include" />
+            <e p="ButtonBusinessObject.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Exam.Shared.csproj" t="IncludeRecursive" />
+        <e p="Helpers" t="Include">
+          <e p="Updateable.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="src/Step.Tcp" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Infrastructure" t="Include">
+          <e p="Base" t="Include">
+            <e p="IServerProperties.cs" t="Include" />
+            <e p="ITcpClient.cs" t="Include" />
+            <e p="ITcpServer.cs" t="Include" />
+            <e p="Reconnectable.cs" t="Include" />
+          </e>
+          <e p="Client" t="Include">
+            <e p="TcpClient.cs" t="Include" />
+          </e>
+          <e p="DataObjects" t="Include">
+            <e p="ServerProperties.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="ClientConnectedEventArgs.cs" t="Include" />
+            <e p="DataReceivedEventArgs.cs" t="Include" />
+            <e p="INotifyClientConnected.cs" t="Include" />
+            <e p="INotifyDataReceived.cs" t="Include" />
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="IPDefiner.cs" t="Include" />
+          </e>
+          <e p="Server" t="Include">
+            <e p="TcpServer.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Step.Tcp.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
